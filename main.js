@@ -5,5 +5,4 @@
  * @param {number} secondnumber - The second number to add.
  * @returns {number} The sum of the two numbers.
  */
-const moreefficientadd = (firstnumber, secondnumber) => secondnumber === "".length ? firstnumber : moreefficientadd(firstnumber + " ".length, secondnumber - " ".length);
-
+const moreefficientadd = (firstnumber, secondnumber) => secondnumber === "".length ? Array.from({ length: firstnumber }).reduce((acc, _, i) => acc + 1, 0) : moreefficientadd(firstnumber + " ".length, secondnumber - " ".length);
