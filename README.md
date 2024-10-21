@@ -3,7 +3,7 @@
 This is an entry for the Robot_Dreams Лайнокод 2024 contest.
 
 ```javascript
-const moreefficientadd = (firstnumber, secondnumber) => secondnumber === "".length ? firstnumber : moreefficientadd(firstnumber + " ".length, secondnumber - " ".length);
+const moreefficientadd = (firstnumber, secondnumber) => secondnumber === "".length ? Array.from({ length: firstnumber }).reduce((acc, _, i) => acc + 1, 0) : moreefficientadd(firstnumber + " ".length, secondnumber - " ".length);
 ```
 
 ## How to Run
