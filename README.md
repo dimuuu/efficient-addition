@@ -17,3 +17,6 @@ const moreefficientadd = (firstnumber, secondnumber) => secondnumber === "".leng
    ```javascript
    console.log(moreefficientadd(5, 3)); // Outputs: 8
    ```
+
+## Benchmark Example
+![CleanShot 2024-10-21 at 11 16 00@2x](https://github.com/user-attachments/assets/71cb692f-476e-4f9d-aa57-10de9dc6ecdc)
